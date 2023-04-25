@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+  background-color: hsl(27, 66%, 92%);
+  width: 100%;
+  min-height: 100vh;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    width: 360px;
+
+    margin: auto;
+
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+}
+
+.amount{
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.right-top img{
+    width: 40px;
+
+}
+.chart-box{
+    color: hsl(25, 47%, 15%);
+    padding: 10px;
+    margin-top: 10px;
+    background-color:white;
+   
+}
+
+
+
+.bottom-bar{
+    color: hsl(25, 47%, 15%);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:white;
+    padding: 10px 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.chart{
+    display: flex;
+justify-content: space-between;
+align-items: end;
+padding-block:20px ;
+/* row-gap: 10px; */
+width: 100%;
+height: 250px;
+
+}
+.expense-day{
+    text-align: center;
+}
+.expense-div{
+    width: 40px;
+ 
+}
+.expense-amount{
+   display: none;
+   background-color: hsl(25, 47%, 15%);
+   border-radius: 2px;
+      margin-bottom: 6px;
+      text-align: center;
+      padding-inline:3px;
+      width:46px;
+
+} 
+.hover{
+    display: block;
+    color: #ffff;
+}
+
+.expense-col{
+    
+    padding: 5px;
+    background-color: hsl(10, 79%, 65%) ;
+    border-radius:2px;
+margin-bottom: 5px;
+width:35px;
+}
+.expense-col-max{
+    
+    padding: 5px;
+    background-color:hsl(186, 34%, 60%) ;
+    border-radius:2px;
+margin-bottom: 5px;
+width:35px;
+}
