@@ -1,0 +1,14 @@
+.expense-div{
+    
+    text-align: center;
+}
+.expense-amount{
+    font-size: 14px;
+    padding-block: 10px;
+}
+.expense-col{
+background-color: var(--Softred);
+border-radius: 5px;
+width: 40px;
+
+}

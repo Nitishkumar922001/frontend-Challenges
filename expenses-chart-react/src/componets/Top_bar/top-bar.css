@@ -1,0 +1,13 @@
+.top-bar{
+  
+    background-color: var(--Softred);
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    border-radius: 10px;
+    align-items: center;
+    color:white;
+}
+.right-part img{
+    width:40px
+}
