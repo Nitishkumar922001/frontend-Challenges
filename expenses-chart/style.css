@@ -84,8 +84,8 @@ height: 250px;
       margin-bottom: 6px;
       text-align: center;
       padding-inline:3px;
-      width:46px;
-
+      /* width:46px; */
+font-size: 12px;
 } 
 .hover{
     display: block;
