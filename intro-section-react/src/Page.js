@@ -1,7 +1,10 @@
+import NavBar from './componets/NavBar/NavBar';
+import './Page.css'
+
 function Page()
 {return<>
     <div className="container">
-        <h1>nitish</h1>
+        <NavBar></NavBar>
     </div>
     </>
 }

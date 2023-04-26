@@ -1,0 +1,48 @@
+.nav-bar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: var(--Almost-White);
+    color: var(--Almost-Black);
+    padding: 10px 20px;
+}
+
+.arrow {
+    margin-left: 8px;
+}
+
+.nav-log {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links div {
+    padding: 10px 20px;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-btns div {
+    padding: 10px 20px;
+
+}
+
+.btn {
+    background-color: white;
+    border: 0.8px solid black;
+    padding: 8px 18px;
+    border-radius: 8px;
+    
+}
