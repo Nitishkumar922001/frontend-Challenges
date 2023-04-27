@@ -1,0 +1,51 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+align-items: center ;
+color: black;
+margin:30px ;
+flex-wrap: wrap;
+}
+.left-part{
+    width: 35%;
+}
+.right-part{
+    width: 40%;
+}
+.poster{
+width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+.title{
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+.content{
+    font-size: 1rem;
+    padding-bottom: 20px;
+    line-height:25px ;
+}
+
+.btn-black
+{ margin-bottom:30px ;
+    background-color:black;
+   color: white;
+    padding: 8px 25px;
+    border: 0.8px solid black;
+    border-radius: 8px;
+   
+}
+.btn-black:hover{
+    background-color: white;
+    border: 0.8px solid black;
+    padding: 8px 25px;
+    border-radius: 8px;
+    color: black;
+}
+.clients{
+    margin-top:40px ;
+}
+.clients img{
+    margin-left: 20px;
+}

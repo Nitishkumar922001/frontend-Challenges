@@ -2,7 +2,7 @@
 
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    
     background-color: var(--Almost-White);
     color: var(--Almost-Black);
     padding: 10px 20px;
@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav-links div {
@@ -45,4 +46,62 @@
     padding: 8px 18px;
     border-radius: 8px;
     
+}
+.feature-list{
+    padding: 10px;
+    /* width: 150px; */
+    top:60px;
+    background-color: white;
+    box-shadow: 1px 1px 5px ;
+   
+   left: 100px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+z-index: 1;
+}
+.feature-list ul{
+    list-style: none;
+}
+.feature-list li{
+    padding: 10px;
+}
+.feature-list  a{
+    
+  text-decoration: none;
+  color:var(--Almost-Black)
+}
+.feature-list img{
+    margin-right: 10px;
+}
+
+
+
+
+.company-list{
+    padding: 10px;
+    /* width: 150px; */
+    top  :60px;
+    left: 300px;
+    background-color: white;
+    box-shadow: 1px 1px 5px ;
+  
+    border-radius: 5px;
+    text-align: center;
+    position:absolute;
+z-index: 1;
+}
+.company-list ul{
+    list-style: none;
+}
+.company-list li{
+    padding: 10px;
+}
+.company-list  a{
+    
+  text-decoration: none;
+  color:var(--Almost-Black)
+}
+.feature-list img{
+    margin-right: 10px;
 }

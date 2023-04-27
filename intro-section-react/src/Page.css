@@ -6,12 +6,10 @@
 }
 body{
     font-family: 'Epilogue', sans-serif;
+    background-color:var(--Almost-White);
 }
 :root{
     --Almost-White: hsl(0, 0%, 98%);
 --Medium-Gray: hsl(0, 0%, 41%);
 --Almost-Black: hsl(0, 0%, 8%);
-}
-h1{
-    color:var(--Medium-Gray);
 }
