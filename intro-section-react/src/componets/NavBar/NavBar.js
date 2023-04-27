@@ -24,11 +24,11 @@ function NavBar() {
     }
 
     return <><nav className="nav-bar">
-
-        <div className="nav-links">
             <div className="nav-log">
                 <p>snap</p>
             </div>
+        <div className="nav-links">
+            <div className='flex'>
             <div className="features-div">
 
                 <a onClick={() => setOpenFeature(!openFeature)}>Features<img  class='arrow' src={src} /></a>
@@ -62,8 +62,8 @@ function NavBar() {
             <div className="about">
                 <a >About</a>
             </div>
-        </div>
-        <div className="nav-btns">
+            </div>
+            <div className="nav-btns">
             <div className="login-btn">
                 <p>Login</p>
             </div>
@@ -71,6 +71,8 @@ function NavBar() {
                 <button className="btn">Register</button>
             </div>
         </div>
+        </div>
+        
 
     </nav>
 
