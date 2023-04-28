@@ -18,83 +18,80 @@ function NavBar() {
     const [openFeature, setOpenFeature] = useState(0)
     const [openCompany, setOpenCompany] = useState(0)
     const [openNav, setOpenNav] = useState(1)
-    if (openFeature ) {
+    if (openFeature) {
         src = arrowUp;
     }
-    if(openCompany)
-    {
-        src1=arrowUp
+    if (openCompany) {
+        src1 = arrowUp
     }
-function menu()
-{
-    setOpenNav(!openNav);
-    if(openNav)
-    {
-        document.querySelector('.nav-links').classList.add('disable');
-        
+    function menu() {
+        setOpenNav(!openNav);
+        if (openNav) {
+            document.querySelector('.nav-links').classList.add('disable');
+
+        }
+        else {
+            document.querySelector('.nav-links').classList.remove('disable')
+        }
     }
-    else{
-        document.querySelector('.nav-links').classList.remove('disable')
-    }
-}
     return <><nav className="nav-bar">
-            <div className="nav-log">
-                <p>snap</p>
-            </div>
+        <div className="nav-log">
+            <p>snap</p>
+        </div>
         <div className="nav-links">
             <div className='flex'>
-            <div className="features-div">
+                <div className="features-div">
 
-                <a onClick={() => setOpenFeature(!openFeature)}>Features<img  class='arrow' src={src} /></a>
-                {openFeature ?
-                    <div className='feature-list'>
-                        <ul>
-                            <li><a href='#'><img src={todo} alt="todo-icon" />Todo List</a></li>
-                            <li><a href='#'><img src={calendar} alt="todo-icon" />Calendar</a></li>
-                            <li><a href='#'><img src={Reminder} alt="todo-icon" />Reminder</a></li>
-                            <li><a href='#'><img src={Planning} alt="todo-icon" />planning</a></li>
-                        </ul>
-                    </div> : ""}
-            </div>
-            <div className="company-div">
-                <a onClick={()=>setOpenCompany(!openCompany)}>Company<img className="arrow" src={src1} alt="down-arrow"></img></a>
+                    <a onClick={() => setOpenFeature(!openFeature)}>Features<img class='arrow' src={src} /></a>
+                    {openFeature ?
+                        <div className='feature-list'>
+                            <ul>
+                                <li><a href='#'><img src={todo} alt="todo-icon" />Todo List</a></li>
+                                <li><a href='#'><img src={calendar} alt="todo-icon" />Calendar</a></li>
+                                <li><a href='#'><img src={Reminder} alt="todo-icon" />Reminder</a></li>
+                                <li><a href='#'><img src={Planning} alt="todo-icon" />planning</a></li>
+                            </ul>
+                        </div> : ""}
+                </div>
+                <div className="company-div">
+                    <a onClick={() => setOpenCompany(!openCompany)}>Company<img className="arrow" src={src1} alt="down-arrow"></img></a>
 
-                
-                        {openCompany ? <div className='company-list'><ul>
-                            <li><a href='#'>Todo List</a></li>
-                            <li><a href='#'>Calendar</a></li>
-                            <li><a href='#'>Reminder</a></li>
-                            
-                        </ul></div>
-                        :""
-                        }
-                    
-            </div>
-            <div className="careers">
-                <a >Carrers</a>
-            </div>
-            <div className="about">
-                <a >About</a>
-            </div>
+
+                    {openCompany ? <div className='company-list'><ul>
+                        <li><a href='#'>Todo List</a></li>
+                        <li><a href='#'>Calendar</a></li>
+                        <li><a href='#'>Reminder</a></li>
+
+                    </ul></div>
+                        : ""
+                    }
+
+                </div>
+                <div className="careers">
+                    <a >Carrers</a>
+                </div>
+                <div className="about">
+                    <a >About</a>
+                </div>
             </div>
             <div className="nav-btns">
-            <div className="login-btn">
-                <p>Login</p>
-            </div>
-            <div >
-                <button className="btn">Register</button>
+                <div className="login-btn">
+                    <p>Login</p>
+                </div>
+                <div >
+                    <button className="btn">Register</button>
+                </div>
             </div>
         </div>
-         </div>
-        { openNav ?
-       
-        <div className='menu-btn' onClick={()=>menu()}>
-        <img src={menu2}/>
-        </div> 
-        :<div className='menu-btn' onClick={()=>menu()}>
-        <img src={menu1}/>
+        {openNav ?
 
-        </div>
+            <div className='menu-btn' onClick={() => menu()}>
+                <img src={menu2} />
+            </div>
+            : <div className='menu-btn' onClick={() => menu()}>
+                <img src={menu1} />
+
+            </div>
         }
     </nav>
 

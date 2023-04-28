@@ -2,7 +2,7 @@
 
     display: flex;
     row-gap: 100px;
-justify-content: space-between;
+    justify-content: space-between;
     background-color: var(--Almost-White);
     color: var(--Almost-Black);
     padding: 10px 20px;
@@ -20,10 +20,10 @@ justify-content: space-between;
 
 .nav-links {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
-   width: 100%;
+    width: 100%;
 }
 
 .nav-links div {
@@ -34,7 +34,7 @@ justify-content: space-between;
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 
 }
 
@@ -48,126 +48,142 @@ justify-content: space-between;
     border: 0.8px solid black;
     padding: 8px 18px;
     border-radius: 8px;
-    
+
 }
-.feature-list{
+
+.feature-list {
     padding: 10px;
     /* width: 150px; */
-    top:60px;
+    top: 60px;
     background-color: white;
-    box-shadow: 1px 1px 5px ;
-   
-   left: 100px;
+    box-shadow: 1px 1px 5px;
+
+    left: 100px;
     border-radius: 5px;
     text-align: center;
     position: absolute;
-z-index: 1;
+    z-index: 1;
 }
-.feature-list ul{
+
+.feature-list ul {
     list-style: none;
 }
-.feature-list li{
+
+.feature-list li {
     padding: 10px 0px;
 }
-.feature-list  a{
-    
-  text-decoration: none;
-  color:var(--Almost-Black)
+
+.feature-list a {
+
+    text-decoration: none;
+    color: var(--Almost-Black)
 }
-.feature-list img{
+
+.feature-list img {
     margin-right: 10px;
 }
 
 
 
 
-.company-list{
+.company-list {
     padding: 10px;
     /* width: 150px; */
-    top  :60px;
+    top: 60px;
     left: 300px;
     background-color: white;
-    box-shadow: 1px 1px 5px ;
-  
+    box-shadow: 1px 1px 5px;
+
     border-radius: 5px;
     text-align: center;
-    position:absolute;
-z-index: 1;
+    position: absolute;
+    z-index: 1;
 }
-.company-list ul{
+
+.company-list ul {
     list-style: none;
 }
-.company-list li{
+
+.company-list li {
     padding: 10px;
 }
-.company-list  a{
-    
-  text-decoration: none;
-  color:var(--Almost-Black)
+
+.company-list a {
+
+    text-decoration: none;
+    color: var(--Almost-Black)
 }
-.feature-list img{
+
+.feature-list img {
     margin-right: 10px;
 }
-.flex{
+
+.flex {
     display: flex;
 
 }
-.menu-btn
-{padding:20px 10px;
-    display: none;  
+
+.menu-btn {
+    padding: 20px 10px;
+    display: none;
 }
-.menu-btn img{
+
+.menu-btn img {
     width: 25px;
     height: 25px;
 }
 
 @media screen and (max-width:768px) {
-   .nav-links{
-    flex-direction: column;
-    position: absolute;
-    height: 100vh;
-    width: 60%;
-    right: 0;
-  box-shadow: 1px 1px 10px;
-  border-radius: 5px;
-    align-items: start;
-    background-color: white;
-   }
-   .flex{
-    flex-direction: column;
-    
-   }
-   .feature-list{
-    position: static;
-     box-shadow: none;
-     z-index: auto;
-   
-     
-   }
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        height: 100vh;
+        width: 60%;
+        right: 0;
+        box-shadow: 1px 1px 10px;
+        border-radius: 5px;
+        align-items: start;
+        background-color: white;
+    }
 
-   .company-list{
-    position: static;
-    box-shadow: none;
-    z-index: auto;
-   }
-   .nav-btns{
-    flex-direction: column;
-  align-self: center;
-   }
-   .btn{
-    padding: 8px 30px;
-   }
+    .flex {
+        flex-direction: column;
 
- 
-   .menu-btn{
-    display: block;
-    position: absolute;
-    z-index: 2;
-   
-    right: 5px;
-   }
-   .disable{
-    display: none;
+    }
+
+    .feature-list {
+        position: static;
+        box-shadow: none;
+        z-index: auto;
+
+
+    }
+
+    .company-list {
+        position: static;
+        box-shadow: none;
+        z-index: auto;
+    }
+
+    .nav-btns {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .btn {
+        padding: 8px 30px;
+    }
+
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        z-index: 2;
+
+        right: 5px;
+    }
+
+    .disable {
+        display: none;
+    }
 }
-}
-
