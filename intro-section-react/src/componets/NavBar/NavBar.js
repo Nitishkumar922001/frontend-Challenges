@@ -8,6 +8,8 @@ import todo from '../../images/icon-todo.svg'
 import calendar from '../../images/icon-calendar.svg'
 import Reminder from '../../images/icon-reminders.svg'
 import Planning from '../../images/icon-planning.svg'
+import menu1 from '../../images/icon-menu.svg'
+import menu2 from '../../images/icon-close-menu.svg'
 import { useState } from 'react'
 
 function NavBar() {
@@ -15,6 +17,7 @@ function NavBar() {
     let src1 = arrowDown;
     const [openFeature, setOpenFeature] = useState(0)
     const [openCompany, setOpenCompany] = useState(0)
+    const [openNav, setOpenNav] = useState(1)
     if (openFeature ) {
         src = arrowUp;
     }
@@ -22,7 +25,18 @@ function NavBar() {
     {
         src1=arrowUp
     }
-
+function menu()
+{
+    setOpenNav(!openNav);
+    if(openNav)
+    {
+        document.querySelector('.nav-links').classList.add('disable');
+        
+    }
+    else{
+        document.querySelector('.nav-links').classList.remove('disable')
+    }
+}
     return <><nav className="nav-bar">
             <div className="nav-log">
                 <p>snap</p>
@@ -71,9 +85,17 @@ function NavBar() {
                 <button className="btn">Register</button>
             </div>
         </div>
-        </div>
-        
+         </div>
+        { openNav ?
+       
+        <div className='menu-btn' onClick={()=>menu()}>
+        <img src={menu2}/>
+        </div> 
+        :<div className='menu-btn' onClick={()=>menu()}>
+        <img src={menu1}/>
 
+        </div>
+        }
     </nav>
 
     </>

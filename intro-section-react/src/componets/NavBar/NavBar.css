@@ -67,7 +67,7 @@ z-index: 1;
     list-style: none;
 }
 .feature-list li{
-    padding: 10px;
+    padding: 10px 0px;
 }
 .feature-list  a{
     
@@ -110,6 +110,64 @@ z-index: 1;
 }
 .flex{
     display: flex;
-    width: 50%;
-   
+
 }
+.menu-btn
+{padding:20px 10px;
+    display: none;  
+}
+.menu-btn img{
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width:768px) {
+   .nav-links{
+    flex-direction: column;
+    position: absolute;
+    height: 100vh;
+    width: 60%;
+    right: 0;
+  box-shadow: 1px 1px 10px;
+  border-radius: 5px;
+    align-items: start;
+    background-color: white;
+   }
+   .flex{
+    flex-direction: column;
+    
+   }
+   .feature-list{
+    position: static;
+     box-shadow: none;
+     z-index: auto;
+   
+     
+   }
+
+   .company-list{
+    position: static;
+    box-shadow: none;
+    z-index: auto;
+   }
+   .nav-btns{
+    flex-direction: column;
+  align-self: center;
+   }
+   .btn{
+    padding: 8px 30px;
+   }
+
+ 
+   .menu-btn{
+    display: block;
+    position: absolute;
+    z-index: 2;
+   
+    right: 5px;
+   }
+   .disable{
+    display: none;
+}
+}
+
