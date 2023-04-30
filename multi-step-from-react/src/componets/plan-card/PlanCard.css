@@ -1,0 +1,46 @@
+.plan-container{
+    width: 600px;
+    display: flex;
+
+    justify-content: space-between;
+}
+.plan-card{
+  width: 150px;
+  height: 200px;
+  border-radius:5px ;
+  border: 1px solid black;
+}
+
+.plan-card input[type="radio"]{
+    display: none;      
+}
+ input[type="radio"]:checked ~ label .plan-card{
+    background-color:var(--Pastel-blue);
+}
+
+.plan-card img {
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+.plan-title{
+font-weight: 500;
+font-size: 1.1rem ;
+margin: 20px;
+margin-bottom:5px ;
+color: var(--Marine-blue);
+}
+.plan-rate{
+    margin-left: 20px;
+    margin-top:5px ;
+}
+.plan-card:hover{
+    border:1px solid var(--Purplish-blue) ;
+}
+.plan-offer
+{ padding-inline: 20px;
+    margin-top: 5px;
+    color: var(--Marine-blue);
+    
+}
