@@ -1,21 +1,21 @@
 .plan-container{
-    width: 600px;
+    width: 480px;
     display: flex;
 
     justify-content: space-between;
 }
 .plan-card{
-  width: 150px;
-  height: 200px;
-  border-radius:5px ;
-  border: 1px solid black;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 
 .plan-card input[type="radio"]{
     display: none;      
 }
- input[type="radio"]:checked ~ label .plan-card{
+ input[type="radio"]:checked ~ label {
     background-color:var(--Pastel-blue);
+    border:1px solid var(--Purplish-blue) ;
 }
 
 .plan-card img {
@@ -23,6 +23,15 @@
     width: 40px;
     height: 40px;
     object-fit: contain;
+}
+.plan-card label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border:1px solid hsl(228, 100%, 84%);
+    border-radius:5px ;
 }
 .plan-title{
 font-weight: 500;
@@ -35,12 +44,12 @@ color: var(--Marine-blue);
     margin-left: 20px;
     margin-top:5px ;
 }
-.plan-card:hover{
+.plan-card label:hover{
     border:1px solid var(--Purplish-blue) ;
 }
 .plan-offer
 { padding-inline: 20px;
-    margin-top: 5px;
+    padding-bottom: 15px;
     color: var(--Marine-blue);
     
 }

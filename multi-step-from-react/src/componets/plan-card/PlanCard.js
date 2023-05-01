@@ -7,18 +7,17 @@ function PlanCard(prop) {
     const plans = ['Acrade', 'Advanced', 'Pro'];
     const planRates = [' $9/mo', '$12/mo', ' $15/mo']//monthly
     const planRates1 = [' $90/yr', '$120/yr', ' $150/yr']//yearly
-function onChangeHandler(event)
-{ 
-    console.log(event.target)
-}
+    function onChangeHandler(event) {
+        console.log(event.target)
+    }
 
     return (<div className='plan-container'>{plans.map((ele, index) => {
         return <div className="plan-card" key={index}>
             <input type="radio" name="card" id={ele} onChange={onChangeHandler} ></input>
             <label htmlFor={ele}>
-                {/* <div> */}
+
                 <img src={img[index]} alt={ele} />
-                {/* </div> */}
+
                 <p className="plan-title">{ele}</p>
                 {prop.period ? <p className="plan-rate"> {planRates[index]}</p>
                     :
