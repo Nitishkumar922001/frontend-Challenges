@@ -13,6 +13,10 @@
 .plan-card input[type="radio"]{
     display: none;      
 }
+.plan-card label{
+    width: 150px;
+    height: 200px;
+}
  input[type="radio"]:checked ~ label {
     background-color:var(--Pastel-blue);
     border:1px solid var(--Purplish-blue) ;
@@ -28,8 +32,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-
+    /* justify-content: space-between; */
+column-gap: 10px;
     border:1px solid hsl(228, 100%, 84%);
     border-radius:5px ;
 }

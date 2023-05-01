@@ -11,8 +11,8 @@ function App() {
   <div className='wrapper'>
  <div className="container">
     <StepBar></StepBar>
-    <Form3></Form3>
-    {/* <Form2></Form2> */}
+    {/* <Form3></Form3> */}
+    <Form2></Form2>
      </div>
   </div>
   
