@@ -54,4 +54,6 @@
         /* font-size: 1rem;
         font-weight: 700; */
     }
-    .btn-div{width: 100%;}
+    .btn-div{width: 100%;
+    align-items: center;
+    }

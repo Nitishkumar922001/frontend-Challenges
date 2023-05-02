@@ -1,5 +1,6 @@
 .form2-div{
     height: 500px;
+    width: 500px;
     display: flex;
     flex-direction: column;
   justify-content: space-between;

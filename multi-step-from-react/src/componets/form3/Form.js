@@ -1,5 +1,5 @@
 import './Form3.css';
-function Form3() {
+function Form3(props) {
     const addOns = [{ 'title': 'online service', 'info': 'Acess to multiplayer games', 'rate': '+1/mon' },
     { 'title': 'Larger storage', 'info': 'Extra 1TB of cloud save', 'rate': ' +$2/mo' }
         , { 'title': ' Customizable Profile', 'info': 'Custom theme on your profile', 'rate': '+$2/mo' }
@@ -11,7 +11,7 @@ function Form3() {
             </div>
             <div className="add-ons">
                 {
-                    addOns.map((addon, index) => <div className="add-on">
+                    addOns.map((addon, index) => <div className="add-on" key={index}>
                         <input type="checkbox" id={addon.title}></input>
                         <label className="add-on-content" htmlFor={addon.title}>
                             <div><h3>{addon.title}</h3>
@@ -25,7 +25,7 @@ function Form3() {
 
             </div>
             <div className="btn-div">
-                <button className="btn-secondary">Go back</button>
+                <button className="btn-secondary" onClick={() => props.steps.setStep(--props.steps.step)}>Go back</button>
                 <button className="btn-primary">Next Step</button>
             </div>
         </div>
