@@ -1,17 +1,12 @@
-import Acrade from '../../assets/images/icon-arcade.svg'
-import Advanced from '../../assets/images/icon-advanced.svg'
-import Pro from '../../assets/images/icon-pro.svg'
+
+import { plans } from '../data'
 import './PlanCard.css'
 function PlanCard(props) {
-    const img = [Acrade, Advanced, Pro];
-    const plans = ['Acrade', 'Advanced', 'Pro'];
-    const planRates = [' $9/mo', '$12/mo', ' $15/mo']//
-    const planRates1 = [' $90/yr', '$120/yr', ' $150/yr']//yearly
-
+     let{Data,setData}=props.plan;
 
     function onChangeHandler(event) {
-        // let data={...``}
-        props.plan.setData({ ...props.plan.Data, 'plan': event.target.name, })
+        
+        setData({ ...Data, 'plan': event.target.name, })
     }
 
     return (<div className='plan-container'>{plans.map((ele, index) => {
@@ -19,20 +14,20 @@ function PlanCard(props) {
 
 
             <input
-                type="radio" name={ele}
-                id={ele} onChange={onChangeHandler}
-                checked={props.plan.Data.plan === ele} />
+                type="radio" name={ele.title}
+                id={ele.title} onChange={onChangeHandler}
+                checked={Data.plan === ele.title} />
 
-            <label htmlFor={ele} >
+            <label htmlFor={ele.title} >
 
-                <img src={img[index]} alt={ele} />
+                <img src={ele.img} alt={ele.title} />
 
-                <p className="plan-title">{ele}</p>
-                {props.plan.Data.billingType === "monthly"
+                <p className="plan-title">{ele.title}</p>
+                {Data.billingType === "monthly"
 
-                    ? <p className="plan-rate"> {planRates[index]}</p>
+                    ? <p className="plan-rate">{ele.monthly}</p>
 
-                    : <div><p className="plan-rate"> {planRates1[index]}</p>
+                    : <div><p className="plan-rate"> {ele.yearly}</p>
                         <p className='plan-offer'>2 months free</p>
                     </div>
                 }

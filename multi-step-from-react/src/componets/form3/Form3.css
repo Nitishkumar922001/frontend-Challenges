@@ -28,7 +28,7 @@
     }
 .active{
     border-color: var(--Purplish-blue);
-    background-color: var(--Pastel-blue);
+    background-color: var(--Magnolia);
 }
     .add-on:hover {
         border-color: var(--Purplish-blue);

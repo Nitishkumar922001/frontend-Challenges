@@ -17,13 +17,15 @@ function Form2(props) {
 
     return (<>
         <div className="form2-div">
-            <h1 className="form2-title">Select your plan</h1>
-            <p>You have the option of monthly or yearly billing</p>
+            <div><h1 className="form2-title">Select your plan</h1>
+            <p className="plan-info">You have the option of monthly or yearly billing</p>
+            </div>
+            
             <PlanCard plan={{...props.plan}} ></PlanCard>
             <div className="toggle-btn" >
                 <span className="month">monthly</span>
                 <label htmlFor='toggle-btn'>
-                    <input id="toggle-btn" type="checkbox" onChange={toggleHandler}></input>
+                    <input id="toggle-btn" type="checkbox" onChange={toggleHandler} checked={props.plan.Data.billingType==='yearly'}></input>
                     <div><span></span></div>
                 </label>
                 <span className="year"> yearly </span>
