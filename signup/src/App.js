@@ -1,11 +1,11 @@
-import bgImg from './images/bg-intro-desktop.png';
-import error1 from './images/icon-error.svg';
+
+import err from './images/icon-error.svg';
 import './App.css';
 import { useRef, useState } from 'react'
 function App() {
 
   const [errors, setErrors] = useState({});
-  // const [data,setData]=useState({});
+
   let Data = useRef({});
   function validate() {
     let error = {};
@@ -20,8 +20,8 @@ function App() {
     } if (!Data.Password) {
       error.Password = ' Email can not be empty'
     }
-    setErrors({...error})
-    return Object.keys(error).length===0;
+    setErrors({ ...error })
+    return Object.keys(error).length === 0;
   }
 
   function handelonChange(event) {
@@ -63,18 +63,22 @@ function App() {
 
             <div className="input-group">
 
-              <input type="text" placeholder="First Name" onChange={handelonChange} name="FirstName" />
+              <input type="text" placeholder="First Name" onChange={handelonChange} name="FirstName" style={errors.FirstName && { outlineColor: 'red' }} />
+              {errors.FirstName&&<img className='error-icon'  alt='error' src={err}/>}
               <p className="error-msg">{errors.FirstName}</p></div>
             <div className="input-group">
-              <input type="text" placeholder="Last Name" onChange={handelonChange} name="LastName" />
+              <input type="text" placeholder="Last Name" onChange={handelonChange} name="LastName" style={errors.LastName && { outlineColor: 'red' }} />
+              {errors.LastName&&<img className='error-icon'  alt='error' src={err}/>}
               <p className="error-msg">{errors.LastName}</p>
             </div>
             <div className="input-group">
-              <input type="email" placeholder=" Email Addrees" onChange={handelonChange} name="Email" />
+              <input type="email" placeholder=" Email Addrees" onChange={handelonChange} name="Email" style={errors.Email && { outlineColor: 'red' }} />
+              {errors.Email&&<img className='error-icon'  alt='error' src={err}/>}
               <p className="error-msg">{errors.Email}</p>
             </div>
             <div className="input-group">
-              <input type="password" placeholder="Password" onChange={handelonChange} name="Password" />
+              <input type="password" placeholder="Password" onChange={handelonChange} name="Password" style={errors.Password && { outlineColor: 'red' }} />
+              {errors.Password&&<img className='error-icon'  alt='error' src={err}/>}
               <p className="error-msg">{errors.Password}</p>
             </div>
             <button className="submit-btn" onClick={handleOnClick} >Claim your free trial </button>
