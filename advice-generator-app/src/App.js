@@ -1,5 +1,6 @@
 import dice from './images/icon-dice.svg';
-import breaker from './images/pattern-divider-desktop.svg'
+import pauseDesktop from './images/pattern-divider-desktop.svg'
+import pauseMobile from './images/pattern-divider-mobile.svg'
 import './App.css';
 import {useEffect,useState} from 'react'
 function App() {
@@ -29,7 +30,10 @@ function App() {
         <div className="advice"><h1>"
         {advice.advice}
         "</h1></div>
-        <img className="breaker" src={breaker} alt={breaker} />
+        <picture>
+        <source media='(min-width:768px)' srcSet={pauseDesktop}/>
+        <img className="breaker" src={pauseMobile} alt='pause' />
+        </picture>
 
         <button className='dice-div' onClick={onClickHandel}><img className="dice-img" src={dice} alt={dice} />
         </button>
