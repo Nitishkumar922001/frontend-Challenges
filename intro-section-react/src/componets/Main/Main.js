@@ -12,8 +12,8 @@ function Main() {
                 <h1 className='title'>Make remote work</h1>
                 <p className='content'>Get your team in sync, no matter your location. Streamline processes,
                     create team rituals, and watch productivity soar.</p>
-                <button class="btn-black">Learn More</button>
-                <div class="clients">
+                <button className="btn-black">Learn More</button>
+                <div className="clients">
                     <div><img src={audiophile}></img></div>
                     <div><img src={databiz}></img></div>
                     <div><img src={maker}></img></div>

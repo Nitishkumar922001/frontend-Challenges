@@ -17,7 +17,7 @@ function NavBar() {
     let src1 = arrowDown;
     const [openFeature, setOpenFeature] = useState(0)
     const [openCompany, setOpenCompany] = useState(0)
-    const [openNav, setOpenNav] = useState(1)
+    const [openNav, setOpenNav] = useState(0)
     if (openFeature) {
         src = arrowUp;
     }
@@ -38,11 +38,11 @@ function NavBar() {
         <div className="nav-log">
             <p>snap</p>
         </div>
-        <div className="nav-links">
+        <div className="nav-links disable">
             <div className='flex'>
                 <div className="features-div">
 
-                    <a onClick={() => setOpenFeature(!openFeature)}>Features<img class='arrow' src={src} /></a>
+                    <a onClick={() => setOpenFeature(!openFeature)}>Features<img className='arrow' src={src} /></a>
                     {openFeature ?
                         <div className='feature-list'>
                             <ul>
