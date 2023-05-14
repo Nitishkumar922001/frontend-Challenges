@@ -29,7 +29,7 @@
   display: flex;
   color: var(--Light-Cyan);
   flex-direction: column;
-  width: 360px;
+  width: 320px;
   min-height: 280px;
   padding: 10px 20px;
   align-items: center;
@@ -63,4 +63,14 @@
   width: 30px;
   height: 30px;
 
+}
+.breaker
+{
+  width: 100%;
+}
+@media screen and (max-width:768px) {
+  .advice-card{
+    width: 280px;
+  }
+  
 }
