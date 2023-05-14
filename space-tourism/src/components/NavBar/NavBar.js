@@ -4,11 +4,21 @@ import iconClose from "../../assets/shared/icon-close.svg";
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import "./NavBar.css";
+import Home from "../home/Home";
+import Crew from "../crew/Crew";
+import  Destination from '../destination/Destination';
+import Technology from '../technology/Technology'
 function NavBar() {
-  const [Toggle, setToggle] = useState(1);
+  const [Toggle, setToggle] = useState(0);
 
   function toggle() {
-    setToggle(!Toggle);
+   let t=!Toggle;
+    setToggle(!Toggle)
+    if(t===false)
+      document.querySelector(".nav-links").classList.add("d-none");
+    else
+     document.querySelector(".nav-links").classList.remove("d-none");
+    
   }
 
   return (
@@ -18,8 +28,8 @@ function NavBar() {
           <img src={companyLogo} alt="companyLogo" />
         </div>
 
-        {Toggle ? (
-          <div className="nav-links">
+        
+          <div className="nav-links d-none">
             <ul>
               <li>
                 <NavLink className="nav-link" to="/">
@@ -43,25 +53,26 @@ function NavBar() {
               </li>
             </ul>
           </div>
-        ) : (
-          ""
-        )}
-        {Toggle ? (
+     
+       
+        {Toggle ?  (
+          <button className="nav-btn" onClick={toggle}>
+            <img src={iconClose} alt="iconHumburger" />
+          </button>)
+          :
+          (
           <button className="nav-btn" onClick={toggle}>
             <img src={iconHumburger} alt="iconHumburger" />
           </button>
-        ) : (
-          <button className="nav-btn" onClick={toggle}>
-            <img src={iconClose} alt="iconHumburger" />
-          </button>
-        )}
+        ) 
+        }
       </nav>
 
       <Routes>
-        <Route path="/" element={<h1>home</h1>}></Route>
-        <Route path="/destination" element={<h1>Destination</h1>}></Route>
-        <Route path="/crew" element={<h1>Crew</h1>}></Route>
-        <Route path="/technology" element={<h1>technology</h1>}></Route>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/destination" element={<Destination/>}></Route>
+        <Route path="/crew" element={<Crew></Crew>}></Route>
+        <Route path="/technology" element={<Technology></Technology>}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -49,10 +49,13 @@ hr {
   width: 30px;
   height: 30px;
 }
-.d-none {
-  display: none;
-}
+ 
+
 @media screen and (max-width: 425px) {
+  .d-none{
+  display:none;
+}
+ 
   .nav-btn {
     position: absolute;
     top: 35px;
@@ -65,25 +68,31 @@ hr {
     min-height: 100vh;
     /* z-index: 1; */
     top: 0;
-    display: flex;
+ 
     right: 0;
     padding: 20px;
      background-color: rgba(192, 180, 180, 0.261);
     position: absolute;
   }
   .nav-links ul {
+    margin-top: 60px;
   background-color: transparent;
     align-items: center;
     justify-content: start;
     row-gap: 40px;
     flex-direction: column;
   }
-  .nav-link li {
+  .nav-link{
+    text-align: right;
+  }
+  .nav-links li {
     padding: 15px;
+    width: 100%;
+  
   }
 }
 @media screen and (max-width:768px) {
-  .bold-txt{
+  .nav-links.bold-txt{
     display: none;
   }
   
