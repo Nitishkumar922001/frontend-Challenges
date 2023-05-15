@@ -1,0 +1,12 @@
+.sucess{
+    width: 500px;
+    height: 500px;
+    color: var(--Cool-gray);
+    text-align: center;
+    display: flex;
+    align-items:center;
+}
+.sucess h1{
+    color:var(--Marine-blue);
+    margin-block:10px ;
+}
