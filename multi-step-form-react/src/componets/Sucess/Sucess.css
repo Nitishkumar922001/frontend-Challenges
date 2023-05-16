@@ -10,3 +10,9 @@
     color:var(--Marine-blue);
     margin-block:10px ;
 }
+ @media screen and (max-width:768px) {
+  .sucess{
+    width: 100%;
+  }
+    
+}

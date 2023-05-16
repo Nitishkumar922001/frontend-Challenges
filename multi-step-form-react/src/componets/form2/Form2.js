@@ -21,7 +21,7 @@ function Form2(props) {
             <p className="plan-info">You have the option of monthly or yearly billing</p>
             </div>
             
-            <PlanCard plan={{...props.plan}} ></PlanCard>
+            <PlanCard className="Plan-card" plan={{...props.plan}} />
             <div className="toggle-btn" >
                 <span className="month">monthly</span>
                 <label htmlFor='toggle-btn'>

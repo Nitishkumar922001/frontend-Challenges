@@ -57,3 +57,17 @@
     .btn-div{width: 100%;
     align-items: center;
     }
+
+
+    @media screen and (max-width:768px) {
+    .form3-div{
+        width: 90%;
+        transform: translateY(-100px);
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0px 0px 1px ;
+        border-radius:20px ;
+    }
+    .add-ons{width: 100%;}
+    
+}

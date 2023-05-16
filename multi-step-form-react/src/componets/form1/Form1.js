@@ -39,7 +39,8 @@ function Form1(props) {
                 <label htmlFor="phone-no">Phone Number
                     {err.Phone ? <p className='error-msg'>{err.Phone}</p> : ''}</label>
                 <input placeholder=" e.g. +1 234 567 890" id="phone-no" type="text" name='Phone' onChange={onChangeHandler} className={err.Phone ? 'error' : 'input'} value={Data.Phone} />
-                <button className="btn-primary" onClick={onClickHandler}>Next Step</button>
+                {<button className="btn-primary" onClick={onClickHandler}>Next Step</button>
+                }
             </form>
         </div>
     </>)

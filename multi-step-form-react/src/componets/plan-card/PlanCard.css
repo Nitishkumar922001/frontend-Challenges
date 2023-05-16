@@ -8,6 +8,7 @@
  display: flex;
  justify-content: space-between;
  align-items: center;
+ flex-direction: column;
 }
 
 .plan-card input[type="radio"]{
@@ -15,7 +16,8 @@
 }
 .plan-card label{
     width: 150px;
-    height: 200px;
+    padding-block: 20px;
+
 }
  input[type="radio"]:checked ~ label {
     background-color:var(--Pastel-blue);
@@ -32,7 +34,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    /* justify-content: space-between; */
 column-gap: 10px;
     border:1px solid hsl(228, 100%, 84%);
     border-radius:5px ;
@@ -56,4 +57,35 @@ color: var(--Marine-blue);
     padding-bottom: 15px;
     color: var(--Marine-blue);
     
+}
+@media screen and (max-width:768px) {
+  .plan-container{
+    width: 100%;
+    flex-direction: column;
+row-gap: 20px;
+    justify-content: space-between;
+  align-items: space-between;
+  
+ 
+  }
+ .plan-card{
+    width: 100%;
+    
+   justify-content: space-between;
+    flex-direction: column;
+ }   
+ .plan-card label{
+    width: 100%;
+   padding: 0;
+    row-gap: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+ }
+ .plan-card img{
+    padding: 0;
+    margin: 0;
+
+ }
 }
