@@ -3,7 +3,7 @@
     /* height: 500px; */
     display: flex;
    row-gap: 30px;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     color: var(--Cool-gray);
 }
