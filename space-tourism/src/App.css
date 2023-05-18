@@ -1,6 +1,9 @@
+
 .container{
-    background: url(./assets/home/background-home-desktop.jpg);
+   background: url(./assets/home/background-home-desktop.jpg);
     min-height: 100vh;
-    
-   
+}
+.des-bg{
+    background: url(./assets/destination/background-destination-desktop.jpg);
+    min-height: 100vh;
 }

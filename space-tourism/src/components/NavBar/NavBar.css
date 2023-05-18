@@ -11,11 +11,10 @@
 hr {
   color: var(--white);
 }
-.nav-links {
-  width: 60%;
-}
+
 .nav-links ul {
   height: 80px;
+  padding: 30px;
   background-color: rgba(192, 180, 180, 0.261);
   justify-content: center;
   list-style: none;
@@ -51,7 +50,7 @@ hr {
 }
  
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 550px) {
   .d-none{
   display:none;
 }
@@ -95,5 +94,7 @@ hr {
   .nav-links.bold-txt{
     display: none;
   }
-  
+  .nav-bar{
+    justify-content: space-between;
+  }
 }

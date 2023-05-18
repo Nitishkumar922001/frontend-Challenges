@@ -1,8 +1,10 @@
+import NavBar from "../../components/NavBar/NavBar";
 import "./Crew.css";
 function Crew() {
   return (
     <div className="crew-container">
-      <h1>home</h1>
+    <NavBar/>
+      <h1>crew</h1>
     </div>
   );
 }

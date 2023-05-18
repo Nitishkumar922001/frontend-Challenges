@@ -1,13 +1,10 @@
 import companyLogo from "../../assets/shared/logo.svg";
 import iconHumburger from "../../assets/shared/icon-hamburger.svg";
 import iconClose from "../../assets/shared/icon-close.svg";
-import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import { useState } from "react";
 import "./NavBar.css";
-import Home from "../home/Home";
-import Crew from "../crew/Crew";
-import  Destination from '../destination/Destination';
-import Technology from '../technology/Technology'
+
 function NavBar() {
   const [Toggle, setToggle] = useState(0);
 
@@ -22,7 +19,7 @@ function NavBar() {
   }
 
   return (
-    <BrowserRouter>
+    
       <nav className="nav-bar">
         <div className="logo">
           <img src={companyLogo} alt="companyLogo" />
@@ -68,13 +65,6 @@ function NavBar() {
         }
       </nav>
 
-      <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/destination" element={<Destination/>}></Route>
-        <Route path="/crew" element={<Crew></Crew>}></Route>
-        <Route path="/technology" element={<Technology></Technology>}></Route>
-      </Routes>
-    </BrowserRouter>
   );
 }
 export default NavBar;

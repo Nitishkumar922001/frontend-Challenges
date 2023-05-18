@@ -1,0 +1,120 @@
+.home-container {
+  min-height: 100vh;
+  background: url("../../assets/home/background-home-desktop.jpg");
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.home-box {
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+.left-div {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+.right-div {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.explore-btn {
+  border-color: transparent;
+  font-size: 28px;
+  width: 250px;
+  height: 250px;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-radius: 50%;
+}
+
+.btn-wrapper {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.btn-wrapper:hover {
+  background-color: rgba(255, 255, 255, 0.368);
+}
+
+.left-div p {
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  color: var(--blue-white);
+  font-weight: 500;
+}
+@media screen and (max-width: 768px) {
+  .home-container {
+    background: url("../../assets/home/background-home-tablet.jpg");
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+  .home-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-div {
+    align-items: center;
+    text-align: center;
+    width: 80%;
+  }
+  .right-div {
+    justify-content: center;
+  }
+  .nav-bar{
+    padding-top:0px;
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .home-container {
+    background: url("../../assets/home/background-home-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+
+    background-repeat: no-repeat;
+  }
+
+  .home-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-div {
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+  }
+  .right-div {
+    justify-content: center;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  h5{
+    font-size: 1rem;
+  }
+  .nav-bar{
+    padding-top:30px;
+    padding-right: 0px;
+  }
+}
