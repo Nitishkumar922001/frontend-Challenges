@@ -15,7 +15,8 @@ hr {
 .nav-links ul {
   height: 80px;
   padding: 30px;
-  background-color: rgba(192, 180, 180, 0.261);
+  background-color:rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
   justify-content: center;
   list-style: none;
   align-items: center;
@@ -70,7 +71,8 @@ hr {
  
     right: 0;
     padding: 20px;
-     background-color: rgba(192, 180, 180, 0.261);
+    background-color:rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
     position: absolute;
   }
   .nav-links ul {
@@ -79,6 +81,7 @@ hr {
     align-items: center;
     justify-content: start;
     row-gap: 40px;
+    backdrop-filter:none;
     flex-direction: column;
   }
   .nav-link{

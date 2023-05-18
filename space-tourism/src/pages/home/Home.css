@@ -13,14 +13,15 @@
   justify-content:space-evenly;
 }
 .left-div {
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   row-gap: 20px;
+  flex-wrap: wrap;
 }
 .right-div {
-  width: 50%;
+  width: 30%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
