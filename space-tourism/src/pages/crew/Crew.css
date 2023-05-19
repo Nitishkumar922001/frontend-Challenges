@@ -1,4 +1,105 @@
 .crew-container{
     background: url(../../assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
     min-height: 100vh;
+}
+.crew-box{
+  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+
+}
+.crew-right-part{
+    width: 50%;
+    text-align: right;
+}
+.crew-right-part img{
+    width: 80%;
+}
+.crew-left-part{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px; ;
+}
+.navigation-btns{
+    width: 100px;
+    display: flex;
+justify-content: space-between;
+}
+.crew-btn{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.281);
+}
+.crew-name{
+    font-size: 56px;
+
+    text-transform: uppercase;
+}
+.crew-role{
+    font-family: "Bellefair", serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    opacity: .5;
+    /* padding: 30px; */
+}
+.crew-container h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 30px;
+}
+.crew-active{
+    background-color: white;
+}
+
+
+@media screen and (max-width:768px) 
+{
+    .crew-box{
+        flex-direction: column;
+    }
+    .crew-left-part
+    
+    {
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .crew-right-part{
+        width: 80%;
+        align-items: center;
+    text-align: center;
+    }
+    .crew-box hr{
+        display: none
+    }
+}
+
+@media screen and (max-width:425px) 
+{
+    .crew-box{flex-direction: column-reverse}
+    .crew-right-part{
+        text-align: center;
+    }
+    .crew-name{
+        font-size: 48px;
+    }
+    .crew-box hr{
+        
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+        opacity: .25;
+    }
+    
 }

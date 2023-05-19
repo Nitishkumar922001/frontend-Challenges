@@ -1,4 +1,128 @@
-.destination-container{
-    background: url(../../assets/destination/background-destination-desktop.jpg);
-    min-height: 100vh;
+.destination-container {
+  background: url(../../assets/destination/background-destination-desktop.jpg);
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.destination-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination-left-part {
+  width: 40%;
+}
+.destination-left-part img {
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+.destination-left-part h5 {
+  padding-block: 20px;
+}
+.destination-right-part {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+}
+
+.destination-right-part li {
+  display: inline-block;
+  padding: 20px 0px;
+  margin-inline: 20px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.planet-active {
+  border-bottom: 3px solid var(--white);
+}
+.destination-right-part li:hover {
+  border-bottom: 3px solid var(--blue-white);
+}
+
+.planet-footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.planet-footer div p {
+  font-size: 16px;
+}
+.destination-box h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+
+.destination-box p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+  font-family: sans-serif;
+  color: var(--blue-white);
+}
+
+.destination-box hr{
+  width: 100%;
+  margin: 0 auto 28px;
+  font-size: 1rem;
+
+  opacity: .25;
+}
+hr:not([size]) {
+  height: 1px;
+}
+@media screen and (max-width:768px) 
+{.destination-box{
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.destination-left-part,.destination-right-part{
+    width: 90%;
+    
+}
+.destination-box h1{
+  font-size: 75px;
+}
+.destination-left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.destination-left-part img{
+    width: 40%;
+}
+.destination-right-part{
+    text-align: center;
+    align-items: center;
+}
+.destination-right-part li{
+  font-size: 1.1rem;
+  margin: 0px 10px;
+}
+.destination-right-part p{
+  font-size: 1rem;
+}
+.destination-box h5{
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+}
+.destination-box hr{
+  width: 90%;
+  margin: 0 auto 28px;
+}
+}
+@media screen and (max-width:425px) 
+{
+  .destination-left-part img{
+    width: 75%;
+}
 }
